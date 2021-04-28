@@ -12,8 +12,6 @@
 - after create image you can run it with docker run --rm deprecat3d/gorocks
 
 
-###### method 2 (docker hub)
-
 ###### method 2 (dockerhub)
 
 
