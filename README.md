@@ -8,11 +8,9 @@
 
 - clone this repo
 - open root of project in your terminal
-- run docker build -t deprecat3d/gorocks
-- after create image you can run it with docker run --rm deprecat3d/gorocks
-
+- run docker build -t deprecat3d/codeeducation
+- after create image you can run it with docker run --rm deprecat3d/codeeducation
 
 ###### method 2 (dockerhub)
 
-
-- Type docker run deprecat3d/gorocks in your terminal and press enter
+- Type docker run deprecat3d/codeeducation in your terminal and press enter

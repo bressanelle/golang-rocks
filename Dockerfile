@@ -9,7 +9,10 @@ COPY ./gorocks.go .
 
 RUN apk add --no-cache go \
     && mkdir -p ${GOPATH}/src ${GOPATH}/bin \
-    && go build -o /app/application . \
+    && go build -o /app/gorocks . \
     && apk del go --purge
 
-ENTRYPOINT [ "/app/application" ]
+
+FROM scratch
+COPY --from=config-docker /app/gorocks /app/gorocks
+ENTRYPOINT [ "/app/gorocks" ]
