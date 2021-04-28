@@ -12,5 +12,4 @@ RUN apk add --no-cache go \
     && go build -o /app/application . \
     && apk del go --purge
 
-
 ENTRYPOINT [ "/app/application" ]
