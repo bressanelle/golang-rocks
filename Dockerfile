@@ -9,7 +9,7 @@ COPY ./gorocks.go .
 
 RUN apk add --no-cache go \
     && mkdir -p ${GOPATH}/src ${GOPATH}/bin \
-    && go build -o /app/gorocks . \
+    && go build -ldflags "-s -w" -o /app/gorocks . \
     && apk del go --purge
 
 
