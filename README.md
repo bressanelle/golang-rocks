@@ -13,4 +13,12 @@
 
 ###### method 2 (dockerhub)
 
-- Type docker run deprecat3d/codeeducation in your terminal and press enter
+- docker run deprecat3d/codeeducation
+
+## sizes
+
+- in dockerhub
+  ![size dockerhub](./dockerhub.jpg)
+
+- using dive
+  ![size pulled img](./dive.jpeg)
